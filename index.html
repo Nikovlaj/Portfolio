@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-header">
+        <div class="logo">
+          
+          <a href="#">Nikola</a>
+        </div>
+        <input type="checkbox" class="nav-toggle" id="drop-menu">
+        <label for="drop-menu" class="nav-toggle-label">
+          <span></span>
+        </label>
+        
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#section-about">About me</a></li>
+            <li><a href="#section-project" class="nav-link">Project</a></li>
+            <li><a class="nav-link" href="#section-contact">Contact</a></li>
+            <li class="btn">
+              <a>
+                <button class="darkMode" id="darkModeToggle">
+                  <img src="BIlder/dark.img.png" />
+                </button>
+              </a>
+            </li>
+           
+          </ul>
+        </nav>
+      
+        
+      </div>
+      
+    </header>
+    
+
+    <main>
+      <div class="container">
+        <section class="section-home">
+          <div class="flex-container">
+            <div class="info">
+              <h3 class="welcome">
+                Hello, My Name is<span class="name"> Nikola Vlajkovic</span>
+              </h3>
+
+              <h3 class="profession">
+                I'm a
+                <span class="animation"
+                  >student studying Fullstack-developer.</span>
+              </h3>
+
+              <p class="abt-me">
+                All clouds have souls.All clouds have souls.All clouds have
+                souls.All clouds have souls.All clouds <br />have souls.All
+                clouds have souls.All clouds have souls.All clouds have souls.
+              </p>
+              <a href="/project.doc/CV.project.pdf" download="CV">
+                <button class="download">Download CV</button>
+              </a>
+              <a
+                href="/project.doc/Personligt brev.pdf"
+                download="Personal letter"
+              >
+                <button class="download" id="personal-letter">
+                  Download Personal letter
+                </button>
+              </a>
+            </div>
+            <div class="home-img">
+              <img
+                class="img"
+                src="BIlder/Profilbild.img.jpg"
+                alt="Image of me"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="about-section" id="section-about">
+        <div class="main-title">
+          <h2 class="abt-me">About Me</h2>
+        </div>
+        <div class="main-container">
+          <div class="about-me">
+            <div class="personal">
+              <h2 class="intro">
+                I'm Nikola Vlajkovic and i am a
+                <span>Fullstack-developer student</span>
+              </h2>
+            </div>
+            <div class="personal">
+              <p class="me">
+                All clouds have souls.All clouds have souls.All clouds haveAll
+                clouds have souls.All clouds have souls.All clouds haveAll
+                clouds have souls.All clouds have souls.All clouds haveAll
+                clouds have souls.All clouds have souls.All clouds haveAll
+                clouds have souls.All clouds have souls.All clouds haveAll
+                clouds have souls.All clouds have souls.All clouds have
+              </p>
+            </div>
+            </div>
+          
+
+          <div class="personal-info">
+            <div>
+            <div class="info">
+              <p>Name: <span>Nikola Vlajkovic</span></p>
+              <p>Age: <span>24</span></p>
+              <p>City: <span>Stockholm</span></p>
+           
+            
+              <p>Email: <span>Nikola.vlajkovicc99@gmail.com</span></p>
+              <p>Languages: <span>Swedish,Serbian and English</span></p>
+              <p>Nationality: <span>Swedish/Serbian</span></p>
+            </div>
+          </div>
+
+            <div class="skills">
+              <h3 class="skills-text">My skills</h3>
+              <div class="skills-logo">
+                <a class="log"
+                  ><img src="BIlder/html.img.png" alt="HTML logo"
+                /></a>
+
+                <a class="log"
+                  ><img src="BIlder/css.img.png" alt="CSS logo"
+                /></a>
+
+                <a class="log">
+                  <img src="BIlder/javascript.img.png" alt="Javascript logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="section-projects" id="section-project">
+        <div class="main-container">
+          <div class="main-title">
+            <h2>Projects</h2>
+          </div>
+          <div class="project-flex">
+            <div class="project1">
+              <a
+                class="project-link"
+                href="https://omnifood.dev/"
+                target="_blank"
+                ><img
+                  class="project-img"
+                  src="BIlder/projekt2bild.img.png"
+                  alt="picture of project"
+              /></a>
+            </div>
+            <div class="project2">
+              <a class="project-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-basic-javascript-by-building-a-role-playing-game/step-49" target="_blank"
+                ><img
+                  class="project-img"
+                  src="BIlder/Projektbild.img.png"
+                  alt="picture of project"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="section-contact">
+        <div class="main-container">
+          <div class="main-title">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="contact-title">
+            <p><span>If you are intrested in hiring me</span></p>
+          </div>
+          <div class="contact-subtitle">
+            <p>send me an Email</p>
+          </div>
+          <div id="error"></div>
+          <form id="myform">
+          <div class="form-group">
+            <input
+            name="name"
+              class="form-control"
+              type="text"
+              id="fname"
+              placeholder="Name"
+            />
+            <input
+            name="email"
+              class="form-control"
+              type="email"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+            name="subject"
+              class="form-control"
+              type="text"
+              id="subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+            name="message"
+              class="form-control"
+              type="text"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="send-btn">
+            <a href="mailto:nikola.vlajkovicc99@gmail.com">
+              <button class="form-btn" id="btn" type="submit">
+                Send Email
+              </button>
+            </a>
+          </div>
+        </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer id="main-footer">
+    <div class="flex-footer">
+      <div class="link">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#section-about">About me</a>
+        <a class="nav-link" href="#section-projects">Projects</a>
+        <a class="nav-link" href="#contact-section">Contact</a>
+      </div>
+      <div class="foot-logo">
+        <a
+          class="footer-logo"
+          href="https://www.linkedin.com/in/nikola-vlajkovic-b4500128b/"
+          target="_blank"
+          ><img src="BIlder/linkedin.img.png" alt="Linkedin Logo"
+        /></a>
+        <a class="foot-logo" href="https://github.com/Nikovlaj" target="_blank"
+          ><img src="BIlder/github.img.png" alt="Github Logo"
+        /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</html>
